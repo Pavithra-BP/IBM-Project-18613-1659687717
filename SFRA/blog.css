@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+h1
+{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+}
+h2
+{
+    font-size: 50px;
+    line-height: 54px;
+    color:#222;
+}
+h4
+{
+    font-size: 20px;
+    color:#222;
+}
+h6
+{
+    font-weight: 700;
+    font-size: 12px;
+}
+p
+{
+    font-size: 50px;
+    color:#222;
+    margin: 15px 0 20px 0;
+}
+.section-p1
+{
+    padding: 40px 80px;
+}
+.section-m1
+{
+    padding: 40px 0;
+}
+body
+{
+    width: 100%;
+}
+button .normal
+{
+    font-size: 14px;
+    font-weight: 600;
+    padding:15px 30px;
+    color:rgb(45, 16, 48);
+    background-color: #886488;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2ss;
+}
+.white
+{
+    font-size: 13px;
+    font-weight: 600;
+    padding:11px 18px;
+    color:rgb(45, 16, 48);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2ss;
+}
+.logo
+{
+    width: 30%;
+    height: 30%;
+}
+#header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(218, 205, 222);
+    box-shadow: 0 5px 15px rgba(0 ,0 ,0 ,0.06);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left: 0;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li
+{
+    list-style: none;
+    padding: 0 30px;
+    position: relative;
+}
+#navbar li button
+{
+    font-size: 20px;
+    color: rgb(45, 16, 48);
+    outline: none;
+    border:none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Merriweather', serif;
+}
+#navbar li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(45, 16, 48);
+    font-family: 'Merriweather', serif;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,#navbar li a.active
+{
+    color: #886488;
+
+}
+#navbar li a.active::after,#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #886488 ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#sm-banner .banner-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("Image/b4.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 40px;
+}
+#sm-banner .banner-box2
+{
+    background-image: url("Image/b5.jpg");
+}
+#sm-banner 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#banner-box:hover
+{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#sm-banner h4
+{
+    color:black;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2
+{
+    color:black;
+    font-size: 40px;
+    font-weight: 800;
+}
+#sm-banner span
+{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button
+{
+    background: #915f93;
+    border: 1px solid #915f93;
+    color:black;
+    transition: 0.3s;
+}
+#banner3
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("Image/b6.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+} 
+#banner3 h2
+{
+    color: black;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3
+{
+    color: red;
+    font-weight: 900;
+    font-size: 15px;
+}
+#banner3 .banner-box11
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("Image/b2.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+} 
+#banner3 .banner-box111
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("Image/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+} 
+#newsletter
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #886488;
+    background-repeat: no-repeat;
+    background-position: 20% 40%;
+    background-size: cover;
+}
+#newsletter p
+{
+    font-size:15px;
+    font-weight: 700;
+    color: #4e014e;
+}
+#newsletter p span
+{
+    color: red;
+}
+#newsletter .form
+{
+    display: flex;
+    width: 40%;
+}
+#newsletter input
+{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 100%;
+    width: 100%;
+    border: 1px;
+    border-radius: 4px;
+    outline: none;
+}
+#newsletter button
+{
+    background-color: #4e014e;
+    padding: 0 1.25em;
+    border-radius: 5px;
+    white-space: nowrap;
+}
